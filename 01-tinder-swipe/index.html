@@ -251,6 +251,7 @@
 
     //get the first article elemente
     const actualCard = e.target.closest("article");
+    if (!actualCard) return;
 
     //get initial position of mouse finger
     const startX = e.pageX ?? e.touches[0].pageX;
